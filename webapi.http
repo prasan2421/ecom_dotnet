@@ -1,0 +1,31 @@
+@webapi_HostAddress = http://localhost:5157
+
+GET {{webapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{webapi_HostAddress}}/pizza
+Accept: application/json
+
+###
+
+
+GET {{webapi_HostAddress}}/pizza/1
+Accept: application/json
+
+###
+
+POST {{webapi_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "name": "Hawaii",
+    "isGlutenFree": false
+}
+
+###
+
+DELETE {{webapi_HostAddress}}/pizza/4
+
+###
